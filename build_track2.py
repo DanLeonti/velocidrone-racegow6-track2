@@ -16,6 +16,10 @@ HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import vdcrypt
 
 SRC = json.load(open(os.path.join(HERE, 'source', 'racegow6-track-2.visualizer.json')))
+# Widen the last two air checkpoints to 3 sections, extending outward from the tower,
+# so pilots taking a wide line round the left side / behind the flag still get the pass.
+SRC['gates'][12].update({'position': [-2.5, 2, 1], 'width': 3})   # left side: x from -4 to -1
+SRC['gates'][13].update({'position': [0, 3.5, 1], 'width': 3})    # behind tower: y from 2 to 5
 S, FLOOR, X0, Z0 = 88, 7, 1450, 0
 
 # ------------------------------------------------------------ quaternion maths
@@ -80,8 +84,8 @@ VISIBLE = {0: 209, 1: 208, 3: 208, 6: 208, 8: 208}  # green start + blue entry f
 for order, g in enumerate(SRC['gates']):
     d_vis, dist, seg = pass_dir(order, g)
     fly = fly_u(d_vis); rot = pick_rot(fly); f, lat, ext = axes(rot)
-    w_pct = 44 if g['width'] <= 1 else 88
-    h_pct = 44 if g['height'] <= 1 else 88
+    pct = lambda v: 44 if v <= 1 else 88 if v <= 2 else round(v*44)
+    w_pct, h_pct = pct(g['width']), pct(g['height'])
     centre = U(g['position']); size_h = 2*h_pct
     pivot = tuple(round(centre[k] - 0.5*size_h*ext[k]) for k in range(3))
     prefab = VISIBLE.get(order, 88)

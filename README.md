@@ -40,8 +40,8 @@ path and checked against its lap animation.
 9. Out the lower cube's back face
 10. Climb, into the upper cube through the back face
 11. Out the upper cube's front face (invisible)
-12. Round the left side (air checkpoint)
-13. Behind the tower past the flag's base (air checkpoint), round the right and back to the start gate
+12. Round the left side (air checkpoint, 3 sections wide so a wide line counts)
+13. Behind the tower past the flag's base (air checkpoint, 3 sections wide), round the right and back to the start gate
 
 To change anything, edit `source/racegow6-track-2.visualizer.json` (or the colour map / scale in
 `build_track2.py`) and re-run `python3 build_track2.py`.
