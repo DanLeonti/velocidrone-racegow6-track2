@@ -47,7 +47,7 @@ path and checked against its lap animation.
 2. Out the lower cube's front face (invisible)
 3. Climbing left turn, into the upper cube through the left face
 4. Out the upper cube's right face (invisible)
-5. Up and round behind the flag pole (air checkpoint)
+5. Up and round behind the flag pole (air checkpoint, 2 m box)
 6. Over the back-left corner, dive into the top square
 7. Out the upper cube's back face (invisible)
 8. Descend round the left, into the lower cube through the left face

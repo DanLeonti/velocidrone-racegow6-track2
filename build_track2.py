@@ -25,6 +25,9 @@ SRC = json.load(open(os.path.join(HERE, 'source', 'racegow6-track-2.visualizer.j
 # so pilots taking a wide line round the left side / behind the flag still get the pass.
 SRC['gates'][12].update({'position': [-2.5, 2, 1], 'width': 3})   # left side: x from -4 to -1
 SRC['gates'][13].update({'position': [0, 3.5, 1], 'width': 3})    # behind tower: y from 2 to 5
+# Pass 5 (round the flag at the top) enlarged to a 2 m box a little further behind the tower,
+# as edited in-game by the track owner.
+SRC['gates'][5].update({'position': [0, 3.16, 2.14], 'width': 2.27, 'height': 2.27})
 S = 88  # cm per section
 
 # ------------------------------------------------------------ quaternion maths
