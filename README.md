@@ -9,8 +9,9 @@ As of 2026-10-09 it was not yet in Velocidrone's official catalogue, so this is 
 When the official track appears in the game, prefer that one.
 
 ## Files
-- `RaceGOW6 Track2 fan build.trk` – the track file (Sports Hall scenery)
-- `RaceGOW6 Track2 fan build.json` – the decrypted gate/barrier list
+- `RaceGOW6 Track2 fan build.trk` – the track file, Sports Hall scenery (desktop)
+- `RaceGOW6 Track2 fan build PolyWorld.trk` – the same track in Empty Polyworld (desktop and mobile, see below)
+- `RaceGOW6 Track2 fan build*.json` – the decrypted gate/barrier lists
 - `preview.png` – top and side view with the lap path
 - `build_track2.py` + `vdcrypt.py` – generator (reads `source/racegow6-track-2.visualizer.json`, writes the .trk)
 - `source/` – the visualizer layouts for Track 1 and Track 2
@@ -19,6 +20,19 @@ When the official track appears in the game, prefer that one.
 1. Copy `RaceGOW6 Track2 fan build.trk` into your **Documents** folder (Windows) or **Home** folder (macOS/Linux).
 2. In Velocidrone: main menu → **Track Editor** → **Import Track** (button at the bottom) → press **Import** next to the track.
 3. Select Sports Hall scenery, track "RaceGOW6 Track2 fan build", Micro / whoop class.
+
+## Flying it on VelociDrone Mobile (phone / tablet)
+The mobile app has no track editor and cannot import files; it only downloads tracks from
+Velocidrone's online track database, and it only has four sceneries: Apocalypse, Dynamic Polyworld,
+Empty Polyworld and Ship Port. So:
+
+1. On the **desktop** sim, import `RaceGOW6 Track2 fan build PolyWorld.trk` (same steps as above).
+   It is the identical track rebuilt in **Empty Polyworld** with PolyWorld objects only.
+2. In the desktop Track Editor select that track and press **Upload** to post it to the online
+   track database (it becomes a public custom track under your account name).
+3. On the phone: pick the **Empty Polyworld** scene → **Download** → search for
+   "RaceGOW6 Track2 fan build" or your pilot name → download → Fly.
+   Fly it once while online so it is kept for offline use.
 
 ## What is modelled
 All 20 PVC tubes from the visualizer (24" sections): start/finish gate, floor spacer, lower cube with a
