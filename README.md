@@ -23,24 +23,23 @@ When the official track appears in the game, prefer that one.
 ## What is modelled
 All 20 PVC tubes from the visualizer (24" sections): start/finish gate, floor spacer, lower cube with a
 three-sided mid square, upper cube, and the flag pole on the far top corner. Scale follows IGOW's official
-RaceGOW6 Track1 file: one section = 0.88 m (gates at 44 %). Tubes are thin cube barriers, physical gate
-faces are Default Neon Squares (green start, blue, purple), repeat passes and air checkpoints are invisible
-squares, exactly as IGOW builds their official files. Gate directions were taken from the visualizer's flight
+RaceGOW6 Track1 file: one section = 0.88 m (gates at 44 %). Tubes are thin cube barriers. Only the start gate (green) and the four entry faces (blue) are visible
+neon squares; exit faces, repeat passes and air checkpoints are invisible checkpoints. Gate directions were taken from the visualizer's flight
 path and checked against its lap animation.
 
 ## Lap (14 passes, in order)
 0. Start/finish gate (green)
 1. Round the right side to the back, into the lower cube through the back face
-2. Out the lower cube's front face
+2. Out the lower cube's front face (invisible)
 3. Climbing left turn, into the upper cube through the left face
-4. Out the upper cube's right face
+4. Out the upper cube's right face (invisible)
 5. Up and round behind the flag pole (air checkpoint)
 6. Over the back-left corner, dive into the top square
-7. Out the upper cube's back face
+7. Out the upper cube's back face (invisible)
 8. Descend round the left, into the lower cube through the left face
 9. Out the lower cube's back face
 10. Climb, into the upper cube through the back face
-11. Out the upper cube's front face
+11. Out the upper cube's front face (invisible)
 12. Round the left side (air checkpoint)
 13. Behind the tower past the flag's base (air checkpoint), round the right and back to the start gate
 

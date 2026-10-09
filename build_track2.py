@@ -76,7 +76,7 @@ pass_dir.cursor = 0
 
 # ---------------------------------------------------------- build the track
 gates, barriers = [], []
-VISIBLE = {0: 209, 1: 208, 2: 210, 3: 208, 4: 210, 6: 208, 7: 210, 8: 208, 11: 210}  # neon G/B/P; others invisible
+VISIBLE = {0: 209, 1: 208, 3: 208, 6: 208, 8: 208}  # green start + blue entry faces; exits and air checkpoints invisible
 for order, g in enumerate(SRC['gates']):
     d_vis, dist, seg = pass_dir(order, g)
     fly = fly_u(d_vis); rot = pick_rot(fly); f, lat, ext = axes(rot)
